@@ -18,10 +18,10 @@ fn main() {
         config.generator(s);
     }
     let dst = config
-        .define("WITH_BZip2", "OFF")
-        .define("WITH_HarfBuzz", "OFF")
-        .define("WITH_PNG", "OFF")
-        .define("WITH_ZLIB", "OFF")
+        .define("WITH_BZip2", "ON")
+        .define("WITH_HarfBuzz", "ON")
+        .define("WITH_PNG", "ON")
+        .define("WITH_ZLIB", "ON")
         .profile("Release")
         .build();
     let out_dir = env::var("OUT_DIR").unwrap();
